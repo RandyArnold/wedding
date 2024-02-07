@@ -6,33 +6,6 @@ import {FormattedMessage} from "react-intl";
 
 import LocaleSwitch from "./LocaleSwitch.jsx";
 
-const navigation = [
-    {
-        id: 'navHome',
-        path: '/home',
-        href: '#',
-        current: true
-    },
-    {
-        id: 'navOther',
-        path: '/home',
-        href: '#',
-        current: false
-    },
-    {
-        id: 'Projects',
-        path: '/home',
-        href: '#',
-        current: false
-    },
-    {
-        id: 'Calendar',
-        path: '/home',
-        href: '#',
-        current: false
-    },
-]
-
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
@@ -48,7 +21,7 @@ export function Navbar(props) {
                                 <div className="flex h-16 justify-between">
                                     <div className="flex">
                                         <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
-                                            {navigation.map((item) => (
+                                            {props.navigation.map((item) => (
                                                 <Link to={item.path}
                                                       key={item.id}
                                                       href={item.href}
@@ -86,10 +59,9 @@ export function Navbar(props) {
 
                             <Disclosure.Panel className="sm:hidden">
                                 <div className="space-y-1 pb-3 pt-2">
-                                    {navigation.map((item) => (
-                                        <Link to={item.path}>
+                                    {props.navigation.map((item) => (
+                                        <Link to={item.path} key={item.id}>
                                             <Disclosure.Button
-                                                key={item.name}
                                                 as="a"
                                                 className={classNames(
                                                     item.current
