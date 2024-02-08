@@ -14,6 +14,11 @@ const features = [
         description: 'home_p2_body',
         imageSrc: '/images/theme.jpg',
         imageAlt: 'theme',
+    }, {
+        name: 'home_p3_title',
+        description: 'home_p3_body',
+        imageSrc: '/images/tent.jpg',
+        imageAlt: 'nogiftsplease',
     },
 ]
 

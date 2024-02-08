@@ -6,6 +6,7 @@ import {FormattedMessage} from "react-intl";
 
 import LocaleSwitch from "./LocaleSwitch.jsx";
 
+
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
