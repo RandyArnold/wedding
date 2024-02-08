@@ -2,15 +2,17 @@ import {FormattedMessage} from "react-intl";
 
 export default function RegistrationForm() {
     return (
-        <div className="space-y-10 divide-y divide-gray-900/10">
-            <div className="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
-                <div className="px-4 sm:px-0">
-                    <h2 className="text-base font-semibold leading-7 text-gray-900">Personal Information</h2>
-                    <p className="mt-1 text-sm leading-6 text-gray-600">Use a permanent address where you can receive
-                        mail.</p>
-                </div>
-
-                <form className="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2">
+        <div className="pt-12">
+            <div className="mx-auto max-w-3xl text-center">
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"><FormattedMessage
+                    id="home_registrationForm_title"/>
+                </h2>
+                <p className="mt-4 text-gray-500">
+                    <FormattedMessage id="home_registrationForm_catchPhrase"/>
+                </p>
+            </div>
+            <div className="space-y-10 divide-gray-900/10 flex justify-center mt-10">
+                <form className="bg-white ring-1 ring-gray-900/5 sm:rounded-xl lg:w-8/12 w-full shadow-lg">
                     <div className="px-4 py-6 sm:p-8">
                         <div className="col-span-full">
                             <label htmlFor="names"

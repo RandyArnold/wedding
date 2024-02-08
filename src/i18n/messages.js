@@ -2,7 +2,8 @@ import { LOCALES } from "./locales";
 
 export const messages = {
     [LOCALES.FRENCH]: {
-        navHome: 'On se marie !',
+        submit: 'Valider',
+        nav_home: 'On se marie !',
         home_catchPhrase: 'Le lendemain dès cinq heures avant que Mme de Rênal fût visible Julien avait obtenu de son ' +
             'mari un congé',
         home_p1_title: "Cest où ?",
@@ -19,11 +20,17 @@ export const messages = {
             " du pays lui avaient offerts à l’envi lorsque sa destitution le chassa du presbytère Les deux chambres qu’il",
         home_witnesses_gars_description: "Qu’aux moyens de lui donner une volée de coups de bâton sans se faire une " +
             "affaire en police correctionnelle Quoique le dîner ne fût indiqué que pur une heure Julien",
-        home_registrationForm_plusoneComment: 'Pensez à préciser ses habitudes alimentaires.'
+        home_registrationForm_title: 'Tu viens, ou tu viens pas ?',
+        home_registrationForm_catchPhrase: 'Oublie pas de nous dire si tu viens ou pas. Tu peux même venir accompagné !',
+        home_registrationForm_plusoneComment: 'Pensez à préciser ses habitudes alimentaires.',
+        home_registrationForm_nameLabel: 'Nom Prénom',
+        home_registrationForm_dietLabel: 'Commentaire / Habitudes alimentaires',
+        home_registrationForm_passwordLabel: 'Mot de passe',
+        home_registrationForm_plusoneLabel: 'Je serai accompagné.e',
 
     },
     [LOCALES.GERMAN]: {
-        navHome: 'Wir heiraten !',
+        nav_home: 'Wir heiraten !',
         home_catchPhrase: 'Husten offenbar eines Mannes Husten aber ein Husten der keinem anderen ähnelte den Hans ' +
             'Castorp jemals gehört hatte ja mit',
         home_p1_title: 'Aufenthalte und Umständlichkeiten.',

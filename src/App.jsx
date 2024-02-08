@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, Outlet, RouterProvider, useLocation} from "react-router-dom";
 
 import {Navbar} from './components/Navbar.jsx'
 import Footer from "./components/Footer.jsx";
@@ -12,21 +12,21 @@ import {messages} from "./i18n/messages";
 
 import './App.css'
 import HomePage from "./components/HomePage.jsx";
+import Accommodation from "./components/Accommodation.jsx";
 import Test from "./components/Test.jsx";
+
 
 const navigation = [
     {
-        id: 'navHome',
+        id: 'nav_home',
         path: '/',
-        href: '#',
         current: true
     },
-    // {
-    //     id: 'navOther',
-    //     path: '/home',
-    //     href: '#',
-    //     current: false
-    // },
+    {
+        id: 'nav_accommodation',
+        path: '/accommodation',
+        current: false
+    },
     // {
     //     id: 'Projects',
     //     path: '/home',
@@ -51,9 +51,13 @@ const router = createBrowserRouter([
                 element: <HomePage/>
             },
             {
+                path: '/accommodation',
+                element: <Accommodation/>
+            },
+            {
                 path: '/test',
                 element: <Test/>
-            }
+            },
         ]
     }
 
