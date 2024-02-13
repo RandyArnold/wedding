@@ -25,7 +25,6 @@ export function Navbar(props) {
                                             {props.navigation.map((item) => (
                                                 <Link to={item.path}
                                                       key={item.id}
-                                                      href={item.href}
                                                       className={classNames(
                                                           item.current
                                                               ? 'border-rose-500 text-gray-900'

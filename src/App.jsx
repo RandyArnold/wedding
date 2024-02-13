@@ -15,7 +15,6 @@ import HomePage from "./components/HomePage.jsx";
 import Accommodation from "./components/Accommodation.jsx";
 import Test from "./components/Test.jsx";
 
-
 const navigation = [
     {
         id: 'nav_home',

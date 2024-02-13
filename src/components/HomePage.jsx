@@ -6,7 +6,7 @@ const features = [
     {
         name: 'home_p1_title',
         description: 'home_p1_body',
-        imageSrc: '/images/home2.jpg',
+        imageSrc: '/images/home.jpg',
         imageAlt: 'home',
     },
     {
@@ -17,8 +17,8 @@ const features = [
     }, {
         name: 'home_p3_title',
         description: 'home_p3_body',
-        imageSrc: '/images/tent.jpg',
-        imageAlt: 'nogiftsplease',
+        imageSrc: '/images/honeymoon.jpg',
+        imageAlt: 'honeymoon',
     },
 ]
 
