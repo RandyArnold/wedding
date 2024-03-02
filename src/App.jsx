@@ -14,6 +14,7 @@ import './App.css'
 import HomePage from "./components/HomePage.jsx";
 import Accommodation from "./components/Accommodation.jsx";
 import Test from "./components/Test.jsx";
+import Playlist from "./components/Playlist.jsx";
 
 const navigation = [
     {
@@ -26,18 +27,11 @@ const navigation = [
         path: '/accommodation',
         current: false
     },
-    // {
-    //     id: 'Projects',
-    //     path: '/home',
-    //     href: '#',
-    //     current: false
-    // },
-    // {
-    //     id: 'Calendar',
-    //     path: '/home',
-    //     href: '#',
-    //     current: false
-    // },
+    {
+        id: 'nav_playlist',
+        path: '/playlist',
+        current: false
+    },
 ]
 
 const router = createBrowserRouter([
@@ -56,6 +50,10 @@ const router = createBrowserRouter([
             {
                 path: '/test',
                 element: <Test/>
+            },
+            {
+                path: '/playlist',
+                element: <Playlist/>
             },
         ]
     }
