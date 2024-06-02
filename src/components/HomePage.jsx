@@ -32,7 +32,8 @@ export default function HomePage() {
         <div className="bg-white">
             <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="mx-auto max-w-3xl text-center">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Corin + Philipp = ❤️</h2>
+                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Corin + Philipp =
+                        ❤️</h2>
                     <p className="mt-4 text-gray-500">
                         <FormattedMessage id="home_catchPhrase"/>
                     </p>
@@ -50,8 +51,21 @@ export default function HomePage() {
                                     'mt-6 lg:col-span-5 lg:row-start-1 lg:mt-0 xl:col-span-4'
                                 )}
                             >
-                                <h3 className="text-lg font-medium text-gray-900"><FormattedMessage id={feature.name}/></h3>
-                                <p className="mt-2 text-sm text-gray-500"><FormattedMessage id={feature.description}/></p>
+                                <h3 className="text-lg font-medium text-gray-900"><FormattedMessage id={feature.name}/>
+                                </h3>
+                                <p className="mt-2 text-sm text-gray-500"><FormattedMessage id={feature.description}/>
+                                </p>
+                                {
+                                    feature.name == 'home_p1_title' &&
+                                    <a href="https://google.fr" target="_blank" className="underline text-sm text-gray-700">
+                                        <p className="mt-2">
+                                            1114 route du petit Givry,
+                                        </p>
+                                        <p>
+                                            18200 Meillant
+                                        </p>
+                                    </a>
+                                }
                             </div>
                             <div
                                 className={classNames(
@@ -61,7 +75,8 @@ export default function HomePage() {
                             >
                                 <div className="aspect-h-2 aspect-w-5 overflow-hidden rounded-lg bg-gray-100">
                                     {/*<img src={feature.imageSrc} alt={feature.imageAlt} className="object-cover object-center align-middle" />*/}
-                                    <img src={feature.imageSrc} alt={feature.imageAlt} className="object-contain object-center align-middle" />
+                                    <img src={feature.imageSrc} alt={feature.imageAlt}
+                                         className="object-contain object-center align-middle"/>
                                 </div>
                             </div>
                         </div>

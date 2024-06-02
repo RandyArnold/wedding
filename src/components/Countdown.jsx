@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {FormattedMessage} from "react-intl";
 
 export default function Countdown() {
-    const eventDate = new Date(2025,5, 2);
+    const eventDate = new Date(2025,7, 16);
     const initialCounter = Math.round((eventDate.getTime() - (new Date()).getTime()) / 1000);
 
     const [seconds, setSeconds] = useState(initialCounter);

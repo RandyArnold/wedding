@@ -5,11 +5,13 @@ const witnesses = [
         name: 'Sarina Saiful',
         description: 'home_witnesses_sarina_description',
         imageUrl: '/images/sarina.jpg',
+        phoneNumber: '+41 76 218 91 95',
     },
     {
-        name: 'Un Gars',
-        description: 'home_witnesses_gars_description',
+        name: 'Christoph Thalmann',
+        description: 'home_witnesses_christoph_description',
         imageUrl: '/images/unknown.jpg',
+        phoneNumber: '+41 79 604 21 30',
     },
     // More people...
 ]
@@ -34,6 +36,7 @@ export default function Witnesses() {
                             <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{witness.name}</h3>
                             <p className="text-base leading-7 text-gray-600">
                                 <FormattedMessage id={witness.description}/>
+                                <a href={"TEL:" + witness.phoneNumber} className="text-gray-600 underline">{witness.phoneNumber}</a>
                             </p>
                         </li>
                     ))}

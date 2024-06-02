@@ -2,25 +2,31 @@ import { LOCALES } from "./locales";
 
 export const messages = {
     [LOCALES.FRENCH]: {
-        submit: 'Valider',
         nav_home: 'On se marie !',
+        home_catchPhrase: 'Le samedi 16 août 2025',
         home_counter: "{days}j {hours}h {minutes}min {seconds}sec",
-        home_catchPhrase: 'Le lendemain dès cinq heures avant que Mme de Rênal fût visible Julien avait obtenu de son ' +
-            'mari un congé',
-        home_p1_title: "Cest où ?",
-        home_p1_body: 'Mais la demoiselle du comptoir avait remarqué la charmante figure de ce jeune bourgeois de ' +
-            'campagne qui arrêté à trois pas du poêle et son petit paquet sous le bras considérait le buste du roi en ' +
-            'beau plâtre blanc Cette demoiselle grande Franc Comtoise fort bien faite et mise comme',
-        home_p2_title: 'Birk ou chaussures blanches ?',
-        home_p2_body: 'Tu es une personne douce qui montre ses jolis orteils à travers des birkenstock ou un bg ' +
-            'intergalactique qui tape dans le balon avec des chaussures blanches ? Viens représenter ta team !',
-        home_witnesses_title: 'Les témoins',
-        home_witnesses_catchPhrase: "Mesdammes, messieurs, les Autres. Soyez rassurés, tout le monde passera un moment " +
-            "formidable grâce à notre équipe de choc.",
-        home_witnesses_sarina_description: "M Chélan avait refusé les logements que les libéraux les plus considérés" +
-            " du pays lui avaient offerts à l’envi lorsque sa destitution le chassa du presbytère Les deux chambres qu’il",
-        home_witnesses_gars_description: "Qu’aux moyens de lui donner une volée de coups de bâton sans se faire une " +
-            "affaire en police correctionnelle Quoique le dîner ne fût indiqué que pur une heure Julien",
+        home_p1_title: "C'est où ?",
+        home_p1_body: 'On va passer la journée au petit Givry, à la ferme où Corin a grandi. L’adresse exacte est :',
+        home_p2_title: 'Y’a un dress code ?',
+        home_p2_body: 'Le thème c’est : Birkenstock ou chaussures blanches. Corin ou Pilou : choisis ton camp ! Pour le ' +
+            'reste de la tenue, mets simplement des vêtements dans lesquels tu te sens bien.',
+        home_p3_title: 'Qu’est-ce que j’offre ?',
+        home_p3_body: 'Les jeunes mariés sont déjà comblés et heureux grâce à votre présence, dont la valeur est ' +
+            'inestimable… Mais bon en vrai, l’argent c’est bien aussi, alors n’hésitez pas à filer de la thune  Les' +
+            ' tourtereaux seront ravis de pouvoir s’envoler en voyage grâce à vous !',
+        home_witnesses_title: 'Nos témoins',
+        home_witnesses_catchPhrase: "D’habitude, on n’aime pas vraiment les surprises. Mais si vous ne pouvez pas " +
+            "résister, vous pouvez prendre contact avec un de nos témoins. Peut-être plutôt avec Christoph, vous aurez " +
+            "plus de chances d’avoir une réponse qu’avec Sarina ;) ",
+        home_witnesses_sarina_description: "Joyeuse, drôle, créative et un peu folle, mais toujours là pour toi " +
+            "quand tu as besoin d'elle. Elle aime le vin, Noël, les chaussettes douillettes et a le permis depuis peu. " +
+            "Éventuellement joignable au ",
+        home_witnesses_christoph_description: "Egalement joyeux, drôle, créatif et un peu fou, et aussi toujours là pour " +
+            "toi quand tu as besoin de lui. Préfère le panaché, l'escalade et l'harmonica (pas au mariage, j'espère). " +
+            "Se déplace généralement à vélo, parfois même jusqu'à Berlin. Joignable au ",
+
+        
+        submit: 'Valider',
         home_registrationForm_title: 'Tu viens, ou tu viens pas ?',
         home_registrationForm_catchPhrase: 'Oublie pas de nous dire si tu viens ou pas. Tu peux même venir accompagné !',
         home_registrationForm_plusoneComment: 'Pensez à préciser ses habitudes alimentaires.',
