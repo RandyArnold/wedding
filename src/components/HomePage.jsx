@@ -1,6 +1,7 @@
 import {FormattedMessage} from "react-intl";
 import Witnesses from "./Witnesses.jsx";
 import RegistrationForm from "./RegistrationForm.jsx";
+import Countdown from "./Countdown.jsx";
 
 const features = [
     {
@@ -36,7 +37,7 @@ export default function HomePage() {
                         <FormattedMessage id="home_catchPhrase"/>
                     </p>
                 </div>
-                <h1 className="text-center pt-8 text-2xl tracking-tight text-gray-900 sm:text-3xl">135h 52min 20sec</h1>
+                <h1 className="text-center pt-8 text-2xl tracking-tight text-gray-900 sm:text-3xl"><Countdown/></h1>
                 <div className="mt-16 space-y-16">
                     {features.map((feature, featureIdx) => (
                         <div

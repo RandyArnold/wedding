@@ -4,6 +4,7 @@ export const messages = {
     [LOCALES.FRENCH]: {
         submit: 'Valider',
         nav_home: 'On se marie !',
+        home_counter: "{days}j {hours}h {minutes}min {seconds}sec",
         home_catchPhrase: 'Le lendemain dès cinq heures avant que Mme de Rênal fût visible Julien avait obtenu de son ' +
             'mari un congé',
         home_p1_title: "Cest où ?",
@@ -31,6 +32,7 @@ export const messages = {
     },
     [LOCALES.GERMAN]: {
         nav_home: 'Wir heiraten !',
+        home_counter: "truc {seconds}",
         home_catchPhrase: 'Husten offenbar eines Mannes Husten aber ein Husten der keinem anderen ähnelte den Hans ' +
             'Castorp jemals gehört hatte ja mit',
         home_p1_title: 'Aufenthalte und Umständlichkeiten.',
