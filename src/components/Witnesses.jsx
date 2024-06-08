@@ -36,7 +36,7 @@ export default function Witnesses() {
                             <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{witness.name}</h3>
                             <p className="text-base leading-7 text-gray-600">
                                 <FormattedMessage id={witness.description}/>
-                                <a href={"TEL:" + witness.phoneNumber} className="text-gray-600 underline">{witness.phoneNumber}</a>
+                                <a href={"TEL:" + witness.phoneNumber} className="text-gray-600 underline whitespace-nowrap">{witness.phoneNumber}</a>
                             </p>
                         </li>
                     ))}

@@ -1,7 +1,8 @@
 import {FormattedMessage} from "react-intl";
+import Countdown from "./Countdown.jsx";
 import Witnesses from "./Witnesses.jsx";
 import RegistrationForm from "./RegistrationForm.jsx";
-import Countdown from "./Countdown.jsx";
+import Accommodation from "./Accommodation.jsx";
 
 const features = [
     {
@@ -34,11 +35,11 @@ export default function HomePage() {
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Corin + Philipp =
                         ❤️</h2>
-                    <p className="mt-4 text-gray-500">
+                    <p className="mt-8 text-gray-500">
                         <FormattedMessage id="home_catchPhrase"/>
                     </p>
                 </div>
-                <h1 className="text-center pt-8 text-2xl tracking-tight text-gray-900 sm:text-3xl"><Countdown/></h1>
+                <h1 className="text-center pt-2 text-2xl tracking-tight text-gray-900 sm:text-3xl"><Countdown/></h1>
                 <div className="mt-16 space-y-16">
                     {features.map((feature, featureIdx) => (
                         <div
@@ -57,7 +58,7 @@ export default function HomePage() {
                                 </p>
                                 {
                                     feature.name == 'home_p1_title' &&
-                                    <a href="https://google.fr" target="_blank" className="underline text-sm text-gray-700">
+                                    <a href="https://maps.app.goo.gl/1Ad1RDmweXRM8jGA7" target="_blank" rel="noreferrer" className="underline text-sm text-gray-700">
                                         <p className="mt-2">
                                             1114 route du petit Givry,
                                         </p>
@@ -82,6 +83,7 @@ export default function HomePage() {
                         </div>
                     ))}
                     <Witnesses/>
+                    <Accommodation/>
                     <RegistrationForm/>
                 </div>
             </div>

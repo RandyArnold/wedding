@@ -4,7 +4,8 @@ export const messages = {
     [LOCALES.FRENCH]: {
         nav_home: 'On se marie !',
         home_catchPhrase: 'Le samedi 16 août 2025',
-        home_counter: "{days}j {hours}h {minutes}min {seconds}sec",
+        home_countdown: "{days}j {hours}h {minutes}min {seconds}sec",
+        home_countdown_lastday: "{hours}h {minutes}min {seconds}sec",
         home_p1_title: "C'est où ?",
         home_p1_body: 'On va passer la journée au petit Givry, à la ferme où Corin a grandi. L’adresse exacte est :',
         home_p2_title: 'Y’a un dress code ?',
@@ -24,11 +25,15 @@ export const messages = {
         home_witnesses_christoph_description: "Egalement joyeux, drôle, créatif et un peu fou, et aussi toujours là pour " +
             "toi quand tu as besoin de lui. Préfère le panaché, l'escalade et l'harmonica (pas au mariage, j'espère). " +
             "Se déplace généralement à vélo, parfois même jusqu'à Berlin. Joignable au ",
-
+        home_accommodation_title:"Logements",
+        home_accommodation_catchPhrase:"Si tu veux, tu peux emmener une tente pour dormir sur place et faire la fête " +
+            "jusqu’au bout de la night ! ",
+        home_accommodation_description:"Si tu veux loger au camping « chez Arnold » dis-le nous à l’inscription.",
         
         submit: 'Valider',
-        home_registrationForm_title: 'Tu viens, ou tu viens pas ?',
-        home_registrationForm_catchPhrase: 'Oublie pas de nous dire si tu viens ou pas. Tu peux même venir accompagné !',
+        home_registrationForm_title: 'Comment je m’inscris ?',
+        home_registrationForm_catchPhrase: 'Inscris-toi et fais-nous part de tes habitudes alimentaires et de tes ' +
+            'préférences de logement ici :',
         home_registrationForm_plusoneComment: 'Pensez à préciser ses habitudes alimentaires.',
         home_registrationForm_nameLabel: 'Nom Prénom',
         home_registrationForm_dietLabel: 'Commentaire / Habitudes alimentaires',
@@ -38,23 +43,44 @@ export const messages = {
     },
     [LOCALES.GERMAN]: {
         nav_home: 'Wir heiraten !',
-        home_counter: "truc {seconds}",
-        home_catchPhrase: 'Husten offenbar eines Mannes Husten aber ein Husten der keinem anderen ähnelte den Hans ' +
-            'Castorp jemals gehört hatte ja mit',
-        home_p1_title: 'Aufenthalte und Umständlichkeiten.',
-        home_p1_body: 'Aufenthalte und Umständlichkeiten Beim Orte Rorschach auf schweizerischem Gebiet vertraut man ' +
-            'sich wieder der Eisenbahn gelangt aber vorderhand nur bis Landquart einer kleinen Alpenstation wo man den' +
-            ' Zug zu wechseln gezwungen ist Es ist eine Schmalspurbahn die man nach längerem Herumstehen in windiger ' +
-            'und wenig reizvoller Gegend besteigt und in',
-        home_p2_title: 'Birkenstocks oder weiße Schuhe?',
-        home_p2_body: 'Du bist eine sanfte Person, die ihre hübschen Zehen durch Birkenstock-Sandalen zeigt, oder ein ' +
-            'intergalaktischer Typ, der mit weißen Schuhen auf den Ball tritt? Komm und repräsentiere dein Team!',
-        home_witnesses_title: 'Die Trauzeugen',
-        home_witnesses_catchPhrase: 'dich glaube ich rasch noch vorstellen Dr Krokowski sa im Hellen am Kamin des ' +
-            'einen Konversationszimmers gleich bei der offenen',
-        home_witnesses_sarina_description: 'Dagegen trank er mit Vergnügen ja mit einer gewissen Hingebung von dem' +
-            ' Wein und gab unter sorgfältiger Vermeidung allzu gefühlvoller Wendungen wiederholt seiner Genugtuung Ausdruck da jemand da sei mit',
-        home_witnesses_gars_description: 'Werden sie ausführlich erzählen genau und gründlich denn wann wäre je die' +
-            ' Kurz oder Langweiligkeit einer Geschichte abhängig gewesen von dem Raum und der Zeit die sie in Anspruch nahm',
+        home_catchPhrase: '????',
+        home_countdown: "????",
+        home_countdown_lastday: "????",
+        home_p1_title: "Wo findet die Hochzeit statt?",
+        home_p1_body: 'Geheiratet und gefestet wird auf dem Hof von Corins Eltern in Meillant. ' +
+            'Die genaue Adresse lautet:',
+        home_p2_title: 'Was soll ich anziehen?',
+        home_p2_body: 'Sozi trifft Hooligan. Das Motto lautet: Birkenstock vs. White Shoes only. Wähle deine Seite! ' +
+            'Oben ziehe Kleidung an, in der du dich wohlfühlst!',
+        home_p3_title: 'Was soll ich schenken?',
+        home_p3_body: 'Das Brautpaar ist wunschlos glücklich, euer Erscheinen ist Geschenk genug... Blablabla… ' +
+            'Cash is King, Geld regiert die Welt. 😉 Die beiden freuen sich über einen kleinen Zustupf in die Reisekasse.',
+        home_witnesses_title: 'Trauzeugin und Trauzeuge',
+        home_witnesses_catchPhrase: "Wir mögen eigentlich keine Überraschungen. Wenn ihr es trotzdem nicht lassen " +
+            "könnt, nehmt mit Trauzeuge oder Trauzeugin Kontakt auf. Vielleicht eher mit Christoph, Sarina " +
+            "antwortet eh nicht. 😊",
+        home_witnesses_sarina_description: "Lebensfroh, lustig, kreativ und verpeilt aber immer für dich da, wenn " +
+            "du sie brauchst. Liebt Wein, Weihnachten, Kuschelsocken und kann mittlerweile sogar Autofahren. " +
+            "Eventuell erreichbar unter ",
+        home_witnesses_christoph_description: "Auch lebensfroh, lustig, kreativ und verpeilt und ebenfalls für dich " +
+            "da, wenn du ihn brauchst. Mag lieber Panaché, klettern und Mundharmonika spielen (hoffentlich nicht an der " +
+            "Hochzeit). Ist meist mit dem Velo unterwegs, manchmal sogar bis nach Berlin. Schon eher erreichbar unter ",
+        home_accommodation_title: "Unterkünfte",
+        home_accommodation_catchPhrase:"Da es eher schwierig wird nach der Hochzeit mit dem Taxi nach Hause zu fahren, " +
+            "macht es Sinn vor Ort zu pfusen. Du kannst gerne auch schon am Freitag anreisen, ab Sonntag kannst du " +
+            "gerne wieder gehen! 😊 \nWo kann ich übernachten?",
+        home_accommodation_description:"Petit Givry, der Hof von der Familie Arnold ist sehr idyllisch gelegen, riesig " +
+            "und es hat viel viel Platz. Du kannst ein Zelt, ein Camper, Wohnmobil, ein Iglu mitnehmen, oder in deinem " +
+            "Auto schlafen. Diejenigen die es bequemer mögen: hier einige Unterkünfte (ca. 5-15 Minuten entfernt):",
+
+        submit: 'Valider',
+        home_registrationForm_title: 'Wie kann ich mich anmelden?',
+        home_registrationForm_catchPhrase: 'Melde dich hier an und teil deine Ess- und Schlafgewohnheiten mit. Falls ihr ' +
+            'niemanden fürs babysitten findet, dürft ihr eure Kids sehr gerne mitnehmen.',
+        home_registrationForm_plusoneComment: 'Pensez à préciser ses habitudes alimentaires.',
+        home_registrationForm_nameLabel: 'Nom Prénom',
+        home_registrationForm_dietLabel: 'Commentaire / Habitudes alimentaires',
+        home_registrationForm_passwordLabel: 'Mot de passe',
+        home_registrationForm_plusoneLabel: 'Je serai accompagné.e',
     },
 };

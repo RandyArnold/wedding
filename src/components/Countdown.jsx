@@ -11,19 +11,30 @@ export default function Countdown() {
     useEffect(() => {
         seconds > 0 &&
         setTimeout(() => {
-                setSeconds(seconds - 1);
-                setCounter(secondsToCounter(seconds));
-            },1000)
+            setSeconds(seconds - 1);
+            setCounter(secondsToCounter(seconds));
+        },1000)
     }, [seconds]);
 
     return (
         <div className="App">
-            <div><FormattedMessage id="home_counter" values={{
-                days: counter.days,
-                hours: counter.hours,
-                minutes: counter.minutes,
-                seconds: counter.seconds,
-            }}/></div>
+            <div>
+                {counter.days > 0 ?
+                    <FormattedMessage id="home_countdown" values={{
+                        days: counter.days,
+                        hours: counter.hours,
+                        minutes: counter.minutes,
+                        seconds: counter.seconds,
+                    }}/>
+                    :
+                    counterRunning(seconds) &&
+                    <FormattedMessage id="home_countdown_lastday" values={{
+                        hours: counter.hours,
+                        minutes: counter.minutes,
+                        seconds: counter.seconds,
+                    }}/>
+                }
+            </div>
         </div>
     );
 }
@@ -44,4 +55,9 @@ function secondsToCounter(seconds) {
         minutes: minutesOut,
         seconds: secondsOut
     }
+}
+
+function counterRunning(seconds)
+{
+    return seconds > 0;
 }

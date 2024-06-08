@@ -1,6 +1,11 @@
 import {FormattedMessage} from "react-intl";
 
 export default function RegistrationForm() {
+    async function saveData(event) {
+        event.preventDefault();
+        console.log(event.target.reportValidity());
+    }
+
     return (
         <div className="pt-12">
             <div className="mx-auto max-w-3xl text-center">
@@ -12,15 +17,16 @@ export default function RegistrationForm() {
                 </p>
             </div>
             <div className="space-y-10 divide-gray-900/10 flex justify-center mt-10">
-                <form className="bg-white ring-1 ring-gray-900/5 sm:rounded-xl lg:w-8/12 w-full shadow-lg">
+                <form onSubmit={saveData} className="bg-white ring-1 ring-gray-900/5 sm:rounded-xl lg:w-8/12 w-full shadow-lg">
                     <div className="px-4 py-6 sm:p-8">
                         <div className="col-span-full">
                             <label htmlFor="names"
                                    className="block text-sm font-medium leading-6 text-gray-900">
-                                <FormattedMessage id="home_registrationForm_nameLabel"/>
+                                <FormattedMessage id="home_registrationForm_nameLabel"/> *
                             </label>
                             <div className="mt-2">
                                 <input
+                                    required
                                     type="text"
                                     name="name"
                                     id="name"
@@ -49,10 +55,11 @@ export default function RegistrationForm() {
                         <div className="col-span-full mt-6">
                             <label htmlFor="password"
                                    className="block text-sm font-medium leading-6 text-gray-900">
-                                <FormattedMessage id="home_registrationForm_passwordLabel"/>
+                                <FormattedMessage id="home_registrationForm_passwordLabel"/> *
                             </label>
                             <div className="mt-2">
                                 <input
+                                    required
                                     type="text"
                                     name="password"
                                     id="password"

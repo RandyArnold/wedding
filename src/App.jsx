@@ -21,11 +21,11 @@ const navigation = [
         path: '/',
         current: true
     },
-    {
-        id: 'nav_accommodation',
-        path: '/accommodation',
-        current: false
-    },
+    // {
+    //     id: 'nav_accommodation',
+    //     path: '/accommodation',
+    //     current: false
+    // },
     // {
     //     id: 'Projects',
     //     path: '/home',
