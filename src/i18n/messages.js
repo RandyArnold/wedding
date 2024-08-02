@@ -11,20 +11,19 @@ export const messages = {
         home_p2_title: 'Y’a un dress code ?',
         home_p2_body: 'Le thème c’est : Birkenstock ou chaussures blanches. Corin ou Pilou : choisis ton camp ! Pour le ' +
             'reste de la tenue, mets simplement des vêtements dans lesquels tu te sens bien.',
-        home_p3_title: 'Qu’est-ce que j’offre ?',
-        home_p3_body: 'Les jeunes mariés sont déjà comblés et heureux grâce à votre présence, dont la valeur est ' +
+        home_p3_title: "Qui contacter ?",
+        home_p3_body: "D’habitude, on n’aime pas vraiment les surprises. Mais si vous ne pouvez pas résister, " +
+            "vous pouvez prendre contact avec les sœurs de Corin : Alison ou Joan.",
+        home_p4_title: 'Qu’est-ce que j’offre ?',
+        home_p4_body: 'Les jeunes mariés sont déjà comblés et heureux grâce à votre présence, dont la valeur est ' +
             'inestimable… Mais bon en vrai, l’argent c’est bien aussi, alors n’hésitez pas à filer de la thune  Les' +
             ' tourtereaux seront ravis de pouvoir s’envoler en voyage grâce à vous !',
         home_witnesses_title: 'Nos témoins',
-        home_witnesses_catchPhrase: "D’habitude, on n’aime pas vraiment les surprises. Mais si vous ne pouvez pas " +
-            "résister, vous pouvez prendre contact avec un de nos témoins. Peut-être plutôt avec Christoph, vous aurez " +
-            "plus de chances d’avoir une réponse qu’avec Sarina ;) ",
-        home_witnesses_sarina_description: "Joyeuse, drôle, créative et un peu folle, mais toujours là pour toi " +
-            "quand tu as besoin d'elle. Elle aime le vin, Noël, les chaussettes douillettes et a le permis depuis peu. " +
-            "Éventuellement joignable au ",
-        home_witnesses_christoph_description: "Egalement joyeux, drôle, créatif et un peu fou, et aussi toujours là pour " +
-            "toi quand tu as besoin de lui. Préfère le panaché, l'escalade et l'harmonica (pas au mariage, j'espère). " +
-            "Se déplace généralement à vélo, parfois même jusqu'à Berlin. Joignable au ",
+        home_witnesses_sarina_description: "Joyeuse, drôle, créative et un peu folle, mais toujours là pour toi quand " +
+            "tu as besoin d'elle. Elle aime le vin, Noël, les chaussettes douillettes et a le permis depuis peu. ",
+        home_witnesses_christoph_description: "Egalement joyeux, drôle, créatif et un peu fou, et aussi toujours là " +
+            "pour toi quand tu as besoin de lui. Préfère le panaché, l'escalade et l'harmonica " +
+            "(pas au mariage, j'espère). Se déplace généralement à vélo, parfois même jusqu'à Berlin.",
         home_accommodation_title:"Logements",
         home_accommodation_catchPhrase:"Si tu veux, tu peux emmener une tente pour dormir sur place et faire la fête " +
             "jusqu’au bout de la night ! ",
@@ -40,7 +39,7 @@ export const messages = {
         home_registrationForm_dietOption_1: 'Je mange tout',
         home_registrationForm_dietOption_2: 'Je suis végé',
         home_registrationForm_dietOption_3: 'Je suis vegan',
-        home_registrationForm_allergiesLabel: 'Alergies',
+        home_registrationForm_allergiesLabel: 'Allergies',
         home_registrationForm_accommodationOptionsLabel: 'Logement',
         home_registrationForm_accommodationOption_1: "J’emmène une tente",
         home_registrationForm_accommodationOption_2: 'Je viens en camping-car/ van',
@@ -55,35 +54,35 @@ export const messages = {
     },
     [LOCALES.GERMAN]: {
         nav_home: 'Wir heiraten !',
-        home_catchPhrase: '????',
-        home_countdown: "????",
-        home_countdown_lastday: "????",
+        home_catchPhrase: 'Samstag 16. August 2025',
+        home_countdown: "{days}Tage {hours}h {minutes}min {seconds}sec",
+        home_countdown_lastday: "{hours}h {minutes}min {seconds}sec",
         home_p1_title: "Wo findet die Hochzeit statt?",
         home_p1_body: 'Geheiratet und gefestet wird auf dem Hof von Corins Eltern in Meillant. ' +
             'Die genaue Adresse lautet:',
         home_p2_title: 'Was soll ich anziehen?',
         home_p2_body: 'Sozi trifft Hooligan. Das Motto lautet: Birkenstock vs. White Shoes only. Wähle deine Seite! ' +
             'Oben ziehe Kleidung an, in der du dich wohlfühlst!',
-        home_p3_title: 'Was soll ich schenken?',
-        home_p3_body: 'Das Brautpaar ist wunschlos glücklich, euer Erscheinen ist Geschenk genug... Blablabla… ' +
-            'Cash is King, Geld regiert die Welt. 😉 Die beiden freuen sich über einen kleinen Zustupf in die Reisekasse.',
+        home_p3_title: "Wen kontaktieren?",
+        home_p3_body: "Wir mögen eigentlich keine Überraschungen. Wenn ihr es trotzdem nicht lassen könnt, nehmt mit " +
+            "Corins Schwestern Alison oder Joan Kontakt auf.",
+        home_p4_title: 'Was soll ich schenken?',
+        home_p4_body: 'Das Brautpaar ist wunschlos glücklich, euer Erscheinen ist Geschenk genug... Blablabla… ' +
+            'Cash is King, Geld regiert die Welt. Die beiden freuen sich über einen kleinen Zustupf in die Reisekasse.',
         home_witnesses_title: 'Trauzeugin und Trauzeuge',
-        home_witnesses_catchPhrase: "Wir mögen eigentlich keine Überraschungen. Wenn ihr es trotzdem nicht lassen " +
-            "könnt, nehmt mit Trauzeuge oder Trauzeugin Kontakt auf. Vielleicht eher mit Christoph, Sarina " +
-            "antwortet eh nicht. 😊",
-        home_witnesses_sarina_description: "Lebensfroh, lustig, kreativ und verpeilt aber immer für dich da, wenn " +
-            "du sie brauchst. Liebt Wein, Weihnachten, Kuschelsocken und kann mittlerweile sogar Autofahren. " +
-            "Eventuell erreichbar unter ",
-        home_witnesses_christoph_description: "Auch lebensfroh, lustig, kreativ und verpeilt und ebenfalls für dich " +
-            "da, wenn du ihn brauchst. Mag lieber Panaché, klettern und Mundharmonika spielen (hoffentlich nicht an der " +
-            "Hochzeit). Ist meist mit dem Velo unterwegs, manchmal sogar bis nach Berlin. Schon eher erreichbar unter ",
+        home_witnesses_sarina_description: "Lebensfroh, lustig, kreativ und verpeilt aber immer für dich da, wenn du " +
+            "sie brauchst. Liebt Wein, Weihnachten, Kuschelsocken und kann mittlerweile sogar Autofahren.",
+        home_witnesses_christoph_description: "Auch lebensfroh, lustig, kreativ und verpeilt und ebenfalls für dich da, " +
+            "wenn du ihn brauchst." +
+            " Mag lieber Panaché, klettern und Mundharmonika spielen (hoffentlich nicht an der Hochzeit). " +
+            "Ist meist mit dem Velo unterwegs, manchmal sogar bis nach Berlin.",
         home_accommodation_title: "Unterkünfte",
         home_accommodation_catchPhrase:"Da es eher schwierig wird nach der Hochzeit mit dem Taxi nach Hause zu fahren, " +
             "macht es Sinn vor Ort zu pfusen. Du kannst gerne auch schon am Freitag anreisen, ab Sonntag kannst du " +
-            "gerne wieder gehen! 😊 \nWo kann ich übernachten?",
-        home_accommodation_description:"Petit Givry, der Hof von der Familie Arnold ist sehr idyllisch gelegen, riesig " +
-            "und es hat viel viel Platz. Du kannst ein Zelt, ein Camper, Wohnmobil, ein Iglu mitnehmen, oder in deinem " +
-            "Auto schlafen. Diejenigen die es bequemer mögen: hier einige Unterkünfte (ca. 5-15 Minuten entfernt):",
+            "gerne wieder gehen!",
+        home_accommodation_description:"Petit Givry, der Hof von der Familie Arnold ist sehr idyllisch gelegen, " +
+            "riesig und es hat viel viel Platz. Du kannst ein Zelt, ein Camper, Wohnmobil, ein Iglu mitnehmen, oder in " +
+            "deinem Auto schlafen.",
 
         submit: 'Valider',
         home_registrationForm_title: 'Wie kann ich mich anmelden?',
