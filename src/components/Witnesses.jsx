@@ -5,13 +5,11 @@ const witnesses = [
         name: 'Sarina Saiful',
         description: 'home_witnesses_sarina_description',
         imageUrl: '/images/sarina.jpg',
-        phoneNumber: '+41 76 218 91 95',
     },
     {
         name: 'Christoph Thalmann',
         description: 'home_witnesses_christoph_description',
         imageUrl: '/images/unknown.jpg',
-        phoneNumber: '+41 79 604 21 30',
     },
     // More people...
 ]
@@ -22,9 +20,6 @@ export default function Witnesses() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"><FormattedMessage id="home_witnesses_title"/></h2>
-                    <p className="mt-4 text-gray-500">
-                        <FormattedMessage id="home_witnesses_catchPhrase"/>
-                    </p>
                 </div>
                 <ul
                     role="list"
@@ -36,7 +31,6 @@ export default function Witnesses() {
                             <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">{witness.name}</h3>
                             <p className="text-base leading-7 text-gray-600">
                                 <FormattedMessage id={witness.description}/>
-                                <a href={"TEL:" + witness.phoneNumber} className="text-gray-600 underline whitespace-nowrap">{witness.phoneNumber}</a>
                             </p>
                         </li>
                     ))}

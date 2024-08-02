@@ -3,6 +3,7 @@ import Countdown from "./Countdown.jsx";
 import Witnesses from "./Witnesses.jsx";
 import RegistrationForm from "./RegistrationForm.jsx";
 import Accommodation from "./Accommodation.jsx";
+import { useIntl } from 'react-intl';
 
 const features = [
     {
@@ -16,9 +17,16 @@ const features = [
         description: 'home_p2_body',
         imageSrc: '/images/theme.jpg',
         imageAlt: 'theme',
-    }, {
+    },
+    {
         name: 'home_p3_title',
         description: 'home_p3_body',
+        imageSrc: '/images/alison&joan.png',
+        imageAlt: 'alison&joan',
+    },
+    {
+        name: 'home_p4_title',
+        description: 'home_p4_body',
         imageSrc: '/images/honeymoon.jpg',
         imageAlt: 'honeymoon',
     },
@@ -29,6 +37,8 @@ function classNames(...classes) {
 }
 
 export default function HomePage() {
+    const intl = useIntl();
+
     return (
         <div className="bg-white">
             <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6 lg:max-w-7xl lg:px-8">
@@ -58,14 +68,53 @@ export default function HomePage() {
                                 </p>
                                 {
                                     feature.name == 'home_p1_title' &&
-                                    <a href="https://maps.app.goo.gl/1Ad1RDmweXRM8jGA7" target="_blank" rel="noreferrer" className="underline text-sm text-gray-700">
-                                        <p className="mt-2">
-                                            1114 route du petit Givry,
-                                        </p>
+                                    <>
                                         <p>
-                                            18200 Meillant
+                                            <a href="https://maps.app.goo.gl/1Ad1RDmweXRM8jGA7" target="_blank" rel="noreferrer" className="underline text-sm text-gray-700">
+                                                <p className="mt-2">
+                                                    1114 route du petit Givry,
+                                                </p>
+                                                <p>
+                                                    18200 Meillant
+                                                </p>
+                                            </a>
                                         </p>
-                                    </a>
+                                        {intl.locale === 'de-DE' &&
+                                            <>
+                                                <p className="mt-2 text-sm text-gray-500">
+                                                    Anreise mit dem ÖV wird nicht empfohlen (da praktisch inexistent).
+                                                </p>
+                                                <p className="text-sm text-gray-500">
+                                                    Bildet wo möglich Fahrgemeinschaften.
+                                                </p>
+                                            </>
+                                        }
+                                    </>
+                                }
+                                {
+                                    feature.name == 'home_p3_title' &&
+                                    <>
+                                        <p className="text-sm text-gray-500 mt-2">
+                                            Alison&nbsp;&#x2022;&nbsp;
+                                            <a href="TEL:+33674328766" rel="noreferrer" className="underline text-sm text-gray-700">
+                                                +33 6 74 32 87 66
+                                            </a>
+                                            &nbsp;&#x2022;&nbsp;
+                                            <a href="MAILTO:arnold.alison@hotmail.fr" rel="noreferrer" className="underline text-sm text-gray-700">
+                                                arnold.alison@hotmail.fr
+                                            </a>
+                                        </p>
+                                        <p className="text-sm text-gray-500">
+                                            Joan&nbsp;&#x2022;&nbsp;
+                                            <a href="TEL:+33674326671" rel="noreferrer" className="underline text-sm text-gray-700">
+                                                +33 6 74 32 66 71
+                                            </a>
+                                            &nbsp;&#x2022;&nbsp;
+                                            <a href="MAILTO:joan.arnold@hotmail.fr" rel="noreferrer" className="underline text-sm text-gray-700">
+                                                joan.arnold@hotmail.fr
+                                            </a>
+                                        </p>
+                                    </>
                                 }
                             </div>
                             <div

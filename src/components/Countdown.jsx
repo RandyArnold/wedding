@@ -22,16 +22,16 @@ export default function Countdown() {
                 {counter.days > 0 ?
                     <FormattedMessage id="home_countdown" values={{
                         days: counter.days,
-                        hours: counter.hours,
-                        minutes: counter.minutes,
-                        seconds: counter.seconds,
+                        hours: String(counter.hours).padStart(2, '0'),
+                        minutes: String(counter.minutes).padStart(2, '0'),
+                        seconds: String(counter.seconds).padStart(2, '0'),
                     }}/>
                     :
                     counterRunning(seconds) &&
                     <FormattedMessage id="home_countdown_lastday" values={{
-                        hours: counter.hours,
-                        minutes: counter.minutes,
-                        seconds: counter.seconds,
+                        hours: String(counter.hours).padStart(2, '0'),
+                        minutes: String(counter.minutes).padStart(2, '0'),
+                        seconds: String(counter.seconds).padStart(2, '0'),
                     }}/>
                 }
             </div>

@@ -78,7 +78,20 @@ function Layout() {
     function getInitialLocal() {
         // getting stored items
         const savedLocale = localStorage.getItem("locale");
-        return savedLocale || LOCALES.GERMAN;
+
+        if (savedLocale && (savedLocale === LOCALES.GERMAN || savedLocale === LOCALES.FRENCH))
+            return savedLocale;
+
+        const navLocale = navigator.language;
+
+        if (Object.values(LOCALES).indexOf(navLocale) > -1) {
+            localStorage.setItem("locale", navLocale);
+            return navLocale;
+        }
+
+        localStorage.setItem("locale", LOCALES.GERMAN);
+
+        return LOCALES.GERMAN;
     }
 
     return (
