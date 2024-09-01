@@ -62,13 +62,13 @@ export const messages = {
             'Die genaue Adresse lautet:',
         home_p2_title: 'Was soll ich anziehen?',
         home_p2_body: 'Sozi trifft Hooligan. Das Motto lautet: Birkenstock vs. White Shoes only. Wähle deine Seite! ' +
-            'Oben ziehe Kleidung an, in der du dich wohlfühlst!',
+            'Ziehe Kleidung an, in der du dich wohlfühlst und die zu deinen Schuhen passen!',
         home_p3_title: "Wen kontaktieren?",
         home_p3_body: "Wir mögen eigentlich keine Überraschungen. Wenn ihr es trotzdem nicht lassen könnt, nehmt mit " +
             "Corins Schwestern Alison oder Joan Kontakt auf.",
         home_p4_title: 'Was soll ich schenken?',
         home_p4_body: 'Das Brautpaar ist wunschlos glücklich, euer Erscheinen ist Geschenk genug... Blablabla… ' +
-            'Cash is King, Geld regiert die Welt. Die beiden freuen sich über einen kleinen Zustupf in die Reisekasse.',
+            'Cash is King, Geld regiert die Welt. Wir freuen uns über einen kleinen Zustupf in die Reisekasse.',
         home_witnesses_title: 'Trauzeugin und Trauzeuge',
         home_witnesses_sarina_description: "Lebensfroh, lustig, kreativ und verpeilt aber immer für dich da, wenn du " +
             "sie brauchst. Liebt Wein, Weihnachten, Kuschelsocken und kann mittlerweile sogar Autofahren.",
@@ -77,17 +77,17 @@ export const messages = {
             " Mag lieber Panaché, klettern und Mundharmonika spielen (hoffentlich nicht an der Hochzeit). " +
             "Ist meist mit dem Velo unterwegs, manchmal sogar bis nach Berlin.",
         home_accommodation_title: "Unterkünfte",
-        home_accommodation_catchPhrase:"Da es eher schwierig wird nach der Hochzeit mit dem Taxi nach Hause zu fahren, " +
-            "macht es Sinn vor Ort zu pfusen. Du kannst gerne auch schon am Freitag anreisen, ab Sonntag kannst du " +
+        home_accommodation_catchPhrase:"Da es eher schwierig wird, nach der Hochzeit mit dem Taxi nach Hause zu fahren, " +
+            "macht es Sinn, vor Ort zu pfusen. Du kannst gerne auch schon am Freitag anreisen, ab Sonntag kannst du " +
             "gerne wieder gehen!",
         home_accommodation_description:"Petit Givry, der Hof von der Familie Arnold ist sehr idyllisch gelegen, " +
-            "riesig und es hat viel viel Platz. Du kannst ein Zelt, ein Camper, Wohnmobil, ein Iglu mitnehmen, oder in " +
+            "riesig und es hat viel, viel Platz. Du kannst ein Zelt, einen Camper, Wohnmobil, ein Iglu mitnehmen, oder in " +
             "deinem Auto schlafen.",
 
         submit: 'Valider',
         home_registrationForm_title: 'Wie kann ich mich anmelden?',
         home_registrationForm_catchPhrase: 'Melde dich hier an und teil deine Ess- und Schlafgewohnheiten mit. Falls ihr ' +
-            'niemanden fürs babysitten findet, dürft ihr eure Kids sehr gerne mitnehmen.',
+            'niemanden fürs Babysitten findet, dürft ihr eure Kids sehr gerne mitnehmen.',
         home_registrationForm_nameLabel: 'Name',
         home_registrationForm_emailLabel: 'Email',
         home_registrationForm_dietOptionsLabel: 'Essgewohnheiten',
