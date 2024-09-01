@@ -97,20 +97,16 @@ export default function HomePage() {
                                         <p className="text-sm text-gray-500 mt-2">
                                             Alison&nbsp;&#x2022;&nbsp;
                                             <a href="TEL:+33674328766" rel="noreferrer" className="underline text-sm text-gray-700">
-                                                +33 6 74 32 87 66
-                                            </a>
-                                            &nbsp;&#x2022;&nbsp;
-                                            <a href="MAILTO:arnold.alison@hotmail.fr" rel="noreferrer" className="underline text-sm text-gray-700">
+                                                +33&nbsp;6&nbsp;74&nbsp;32&nbsp;87&nbsp;66
+                                            </a> &#x2022; <a href="MAILTO:arnold.alison@hotmail.fr" rel="noreferrer" className="underline text-sm text-gray-700">
                                                 arnold.alison@hotmail.fr
                                             </a>
                                         </p>
                                         <p className="text-sm text-gray-500">
                                             Joan&nbsp;&#x2022;&nbsp;
                                             <a href="TEL:+33674326671" rel="noreferrer" className="underline text-sm text-gray-700">
-                                                +33 6 74 32 66 71
-                                            </a>
-                                            &nbsp;&#x2022;&nbsp;
-                                            <a href="MAILTO:joan.arnold@hotmail.fr" rel="noreferrer" className="underline text-sm text-gray-700">
+                                                +33&nbsp;6&nbsp;74&nbsp;32&nbsp;66&nbsp;71
+                                            </a> &#x2022; <a href="MAILTO:joan.arnold@hotmail.fr" rel="noreferrer" className="underline text-sm text-gray-700">
                                                 joan.arnold@hotmail.fr
                                             </a>
                                         </p>
