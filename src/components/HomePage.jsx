@@ -45,11 +45,11 @@ export default function HomePage() {
                 <div className="mx-auto max-w-3xl text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Corin + Philipp =
                         ❤️</h2>
-                    <p className="mt-8 text-gray-500">
+                    <p className="mt-8 text-2xl tracking-tight text-gray-900 sm:text-3xl">
                         <FormattedMessage id="home_catchPhrase"/>
                     </p>
                 </div>
-                <h1 className="text-center pt-2 text-2xl tracking-tight text-gray-900 sm:text-3xl"><Countdown/></h1>
+                <h1 className="text-center pt-2 text-gray-700 text-xl"><Countdown/></h1>
                 <div className="mt-16 space-y-16">
                     {features.map((feature, featureIdx) => (
                         <div
