@@ -4,8 +4,9 @@ export const messages = {
     [LOCALES.FRENCH]: {
         nav_home: 'On se marie !',
         home_catchPhrase: 'Le samedi 16 août 2025',
-        home_countdown: "{days}j {hours}h {minutes}min {seconds}sec",
-        home_countdown_lastday: "{hours}h {minutes}min {seconds}sec",
+        home_countdown: "Dans {days} jours",
+        home_countdown_tomorrow: "C’est demain!",
+        home_countdown_lastday: "C’est aujourd’hui!",
         home_p1_title: "C'est où ?",
         home_p1_body: 'On va passer la journée au petit Givry, à la ferme où Corin a grandi. L’adresse exacte est :',
         home_p2_title: 'Y’a un dress code ?',
@@ -55,8 +56,9 @@ export const messages = {
     [LOCALES.GERMAN]: {
         nav_home: 'Wir heiraten !',
         home_catchPhrase: 'Samstag 16. August 2025',
-        home_countdown: "{days}Tage {hours}h {minutes}min {seconds}sec",
-        home_countdown_lastday: "{hours}h {minutes}min {seconds}sec",
+        home_countdown: "In {days} Tagen",
+        home_countdown_tomorrow: "Morgen ist es so weit!",
+        home_countdown_lastday: "Heute wird gefeiert",
         home_p1_title: "Wo findet die Hochzeit statt?",
         home_p1_body: 'Geheiratet und gefestet wird auf dem Hof von Corins Eltern in Meillant. ' +
             'Die genaue Adresse lautet:',
