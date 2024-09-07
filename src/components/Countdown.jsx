@@ -2,8 +2,7 @@ import {FormattedMessage} from "react-intl";
 import ConfettiExplosion from "react-confetti-explosion";
 
 export default function Countdown() {
-    // const eventDate = new Date(2025,7, 16);
-    const eventDate = new Date(2024,8, 3);
+    const eventDate = new Date(2025,7, 16);
     const eventInDays = Math.ceil((eventDate.getTime() - new Date().getTime()) / (1000 * 3600 * 24));
 
     return (

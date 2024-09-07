@@ -64,7 +64,7 @@ export const messages = {
             'Die genaue Adresse lautet:',
         home_p2_title: 'Was soll ich anziehen?',
         home_p2_body: 'Sozi trifft Hooligan. Das Motto lautet: Birkenstock vs. White Shoes only. Wähle deine Seite! ' +
-            'Ziehe Kleidung an, in der du dich wohlfühlst und die zu deinen Schuhen passen!',
+            'Ziehe Kleidung an, in der du dich wohlfühlst und die zu deinen Schuhen passt!',
         home_p3_title: "Wen kontaktieren?",
         home_p3_body: "Wir mögen eigentlich keine Überraschungen. Wenn ihr es trotzdem nicht lassen könnt, nehmt mit " +
             "Corins Schwestern Alison oder Joan Kontakt auf.",
