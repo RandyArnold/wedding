@@ -1,8 +1,8 @@
 import {LOCALES} from "../i18n/locales.js";
 
 const i18n = {
-    frenchFlag: 'https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg',
-    swissFlag: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Switzerland_%28Pantone%29.svg',
+    frenchFlag: '/images/french_flag.svg',
+    swissFlag: '/images/swiss_flag.svg',
 }
 
 export default function LocaleSwitch(props) {
