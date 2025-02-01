@@ -3,7 +3,7 @@ import { LOCALES } from "./locales";
 export const messages = {
     [LOCALES.FRENCH]: {
         nav_home: 'On se marie !',
-        home_catchPhrase: 'Le samedi 16 août 2025',
+        home_catchPhrase: 'Le dimanche 24 mai 2026',
         home_countdown: "Dans {days} jours",
         home_countdown_tomorrow: "C’est demain!",
         home_countdown_lastday: "C’est aujourd’hui!",
@@ -55,7 +55,7 @@ export const messages = {
     },
     [LOCALES.GERMAN]: {
         nav_home: 'Wir heiraten !',
-        home_catchPhrase: 'Samstag 16. August 2025',
+        home_catchPhrase: 'Sonntag, 24. Mai 2026',
         home_countdown: "In {days} Tagen",
         home_countdown_tomorrow: "Morgen ist es so weit!",
         home_countdown_lastday: "Heute wird gefeiert",
