@@ -12,8 +12,7 @@ import {messages} from "./i18n/messages";
 
 import './App.css'
 import HomePage from "./components/HomePage.jsx";
-import Accommodation from "./components/Accommodation.jsx";
-import Test from "./components/Test.jsx";
+import Program from "./components/Program.jsx";
 
 const navigation = [
     {
@@ -21,23 +20,11 @@ const navigation = [
         path: '/',
         current: true
     },
-    // {
-    //     id: 'nav_accommodation',
-    //     path: '/accommodation',
-    //     current: false
-    // },
-    // {
-    //     id: 'Projects',
-    //     path: '/home',
-    //     href: '#',
-    //     current: false
-    // },
-    // {
-    //     id: 'Calendar',
-    //     path: '/home',
-    //     href: '#',
-    //     current: false
-    // },
+    {
+        id: 'nav_program',
+        path: '/program',
+        current: false
+    }
 ]
 
 const router = createBrowserRouter([
@@ -50,13 +37,9 @@ const router = createBrowserRouter([
                 element: <HomePage/>
             },
             {
-                path: '/accommodation',
-                element: <Accommodation/>
-            },
-            {
-                path: '/test',
-                element: <Test/>
-            },
+                path: '/program',
+                element: <Program/>
+            }
         ]
     }
 
@@ -94,6 +77,11 @@ function Layout() {
         return LOCALES.GERMAN;
     }
 
+    const [currentPath, setCurrentPath] = useState(window.location.pathname);
+
+    const changePath = (itemPath) => {
+        setCurrentPath(itemPath)
+    }
     return (
         <>
             <IntlProvider
@@ -101,7 +89,7 @@ function Layout() {
                 locale={currentLocale}
                 defaultLocale={LOCALES.GERMAN}
             >
-                <Navbar navigation={navigation} currentLocale={currentLocale} switchLocale={switchLocale}/>
+                <Navbar navigation={navigation} currentLocale={currentLocale} currentPath={currentPath} switchLocale={switchLocale} changePath={changePath}/>
                 <Outlet/>
                 <Footer navigation={navigation}/>
             </IntlProvider>
