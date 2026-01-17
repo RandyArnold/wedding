@@ -3,6 +3,7 @@ import { LOCALES } from "./locales";
 export const messages = {
     [LOCALES.FRENCH]: {
         nav_home: 'On se marie !',
+        nav_program: 'Programme',
         home_catchPhrase: 'Le dimanche 24 mai 2026',
         home_countdown: "Dans {days} jours",
         home_countdown_tomorrow: "C’est demain!",
@@ -52,9 +53,36 @@ export const messages = {
         home_registrationForm_successBannerMessage: 'Super, merci beaucoup le 💯',
         home_registrationForm_errorBannerMessage: 'Ooops ,  quelque chose ne s’est pas passé comme prévu. Réessaye plus' +
             ' tard le 💯',
+        program_schedule_title: "Déroulé",
+        program_schedule_catchPhrase: "Voici le programme du week-end. Pour celles et ceux qui dorment sur place le" +
+            " samedi : merci de nous prévenir si vous souhaitez dîner avec nous ce soir-là et/ou si vous aimeriez" +
+            " un casse-croûte le dimanche midi. N'hésitez pas, ce sera avec plaisir 😊",
+        program_activities_title: "Activités dans les environs",
+        program_activities_body_p1: "Le dimanche matin, vous pouvez bien sûr faire la grasse mat’ et profiter de la " +
+            "tranquillité de la ferme. Si vous le souhaitez, vous pouvez également organiser une petite sortie. " +
+            "Dans les environs, plusieurs beaux châteaux sont à découvrir, par exemple :",
+        program_activities_castle1_name: 'Le château de Meillant',
+        program_activities_castle1_description: ', situé directement dans le village',
+        program_activities_castle2_name: 'Le château d’Ainay-le-Viel',
+        program_activities_castle2_description: ', à environ vingt minutes en voiture',
+        program_activities_body_p2: "Vous pouvez aussi visiter Bourges, qui se trouve à environ quarante minutes de Meillant.",
+        program_activities_body_p3: "Prévenez-nous par WhatsApp si vous souhaitez partager le dîner avec nous " +
+            "le samedi soir et/ou un casse-croûte le dimanche midi.",
+        program_activities_body_p4: "Si vous préférez manger au restaurant, voici nos adresses favorites :",
+        program_activities_separator: ", à ",
+        program_music_title: "Musique",
+        program_music_catchPhrase: "Envie de participer à la playlist ?\n" +
+            "\n" +
+            "Envoie-nous ta demande musicale ici :\n" +
+            "\n" +
+            "Agathe, tu peux y aller avec Taylor Swift, tu feras le bonheur de Mutti ! ;)",
+        program_music_body_p1: "Envie de participer à la playlist ?" +
+            " Envoie-nous ta demande musicale ici : ",
+        program_music_body_p2: "Agathe, tu peux y aller avec Taylor Swift, tu feras le bonheur de Mutti ! 😉"
     },
     [LOCALES.GERMAN]: {
         nav_home: 'Wir heiraten !',
+        nav_program: 'Programm',
         home_catchPhrase: 'Sonntag, 24. Mai 2026',
         home_countdown: "In {days} Tagen",
         home_countdown_tomorrow: "Morgen ist es so weit!",
@@ -106,5 +134,25 @@ export const messages = {
         home_registrationForm_accommodationOption_7: 'Anderes',
         home_registrationForm_successBannerMessage: 'Top, danke für die Anmeldung.',
         home_registrationForm_errorBannerMessage: 'Oooops, da ist etwas falsch gelaufen, versuche es später nochmals.',
+        program_schedule_title: "Ablauf",
+        program_schedule_catchPhrase: "Hier ist das Programm für das Wochenende. Für alle, die bereits am Samstag vor " +
+            "Ort übernachten: Gebt uns gerne Bescheid, falls ihr am Samstagabend mit uns essen möchtet und/oder am " +
+            "Sonntagmittag einen kleinen Snack möchtet. Es wäre uns eine Freude 😊",
+        program_activities_title: "Die Umgebung erkunden",
+        program_activities_body_p1: "Am Sonntagmorgen könnt ihr selbstverständlich ausschlafen und die Ruhe auf dem Hof " +
+            "geniessen. Wenn ihr Lust habt, könnt ihr auch einen kleinen Ausflug machen. In der Umgebung gibt es mehrere " +
+            "schöne Schlösser zu entdecken, zum Beispiel:",
+        program_activities_castle1_name: 'das Schloss Meillant',
+        program_activities_castle1_description: ', direkt im Dorf gelegen',
+        program_activities_castle2_name: 'das Schloss Ainay-le-Vieil',
+        program_activities_castle2_description: ', etwa zwanzig Minuten mit dem Auto entfernt',
+        program_activities_body_p2: "Auch Bourges ist einen Besuch wert, etwa vierzig Minuten von Meillant entfernt.",
+        program_activities_body_p3: "Gebt uns gerne per WhatsApp Bescheid, falls ihr am Samstagabend mit uns essen und/oder " +
+            "am Sonntagmittag einen kleinen Snack haben möchtet.",
+        program_activities_body_p4: "Falls ihr lieber in ein Restaurant gehen möchtet, hier unsere Lieblingsadressen:",
+        program_activities_separator: " in ",
+        program_music_title: 'Musik',
+        program_music_body_p1: "Schick uns deinen Musikwunsch hier: ",
+        program_music_body_p2: "Und lieber Papa Daniel: Songs von Klaus & Klaus sind an diesem Tag strengstens verboten!!"
     },
 };

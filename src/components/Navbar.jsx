@@ -6,7 +6,6 @@ import {FormattedMessage} from "react-intl";
 
 import LocaleSwitch from "./LocaleSwitch.jsx";
 
-
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
@@ -25,8 +24,9 @@ export function Navbar(props) {
                                             {props.navigation.map((item) => (
                                                 <Link to={item.path}
                                                       key={item.id}
+                                                      onClick={() => props.changePath(item.path)}
                                                       className={classNames(
-                                                          item.current
+                                                          props.currentPath == item.path
                                                               ? 'border-rose-500 text-gray-900'
                                                               : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
                                                           'inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium'
