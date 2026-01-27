@@ -108,7 +108,7 @@ export const messages = {
             "Ist meist mit dem Velo unterwegs, manchmal sogar bis nach Berlin.",
         home_accommodation_title: "Unterkünfte",
         home_accommodation_catchPhrase:"Da es eher schwierig wird, nach der Hochzeit mit dem Taxi nach Hause zu fahren, " +
-            "macht es Sinn, vor Ort zu pfusen. Du kannst gerne auch schon am Freitag anreisen, ab Sonntag kannst du " +
+            "macht es Sinn, vor Ort zu pfusen. Du kannst gerne auch schon am Freitag anreisen, ab Montag kannst du " +
             "gerne wieder gehen!",
         home_accommodation_description:"Petit Givry, der Hof von der Familie Arnold ist sehr idyllisch gelegen, " +
             "riesig und es hat viel, viel Platz. Du kannst ein Zelt, einen Camper, Wohnmobil, ein Iglu mitnehmen, oder in " +
